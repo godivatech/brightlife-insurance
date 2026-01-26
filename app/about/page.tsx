@@ -72,31 +72,31 @@ export default function About() {
                     <div className="row g-0 mx-lg-0">
                         <div className="col-lg-6 facts-text wow fadeIn" data-wow-delay="0.1s">
                             <div className="h-100 px-4 ps-lg-0">
-                                <h1 className="text-white mb-4">For Individuals And Organisations</h1>
+                                <h1 className="text-white mb-4">Empowering Your Financial Freedom</h1>
                                 <p className="text-light mb-5">
-                                    Whether you need personal life coverage, a group health plan, or reliable motor insurance, Bright Life Insurance has tailored solutions for everyone.
+                                    Our mission is to make insurance accessible, understandable, and effective for everyone. From safeguarding your family's future to protecting your vehicle, we deliver promises, not just policies.
                                 </p>
-                                <a href="" className="align-self-start btn btn-secondary py-3 px-5">More Details</a>
+                                <a href="" className="align-self-start btn btn-secondary py-3 px-5">Join Our Family</a>
                             </div>
                         </div>
                         <div className="col-lg-6 facts-counter wow fadeIn" data-wow-delay="0.5s">
                             <div className="h-100 px-4 pe-lg-0">
                                 <div className="row g-5">
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">1234</h1>
-                                        <p className="fs-5 text-primary">Happy Clients</p>
+                                        <h1 className="display-5" data-toggle="counter-up">1300</h1>
+                                        <p className="fs-5 text-primary">Happy Families</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">1234</h1>
-                                        <p className="fs-5 text-primary">Projects Succeed</p>
+                                        <h1 className="display-5" data-toggle="counter-up">500</h1>
+                                        <p className="fs-5 text-primary">Policies Active</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">1234</h1>
-                                        <p className="fs-5 text-primary">Awards Achieved</p>
+                                        <h1 className="display-5" data-toggle="counter-up">98</h1>
+                                        <p className="fs-5 text-primary">Claims Settled (%)</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">1234</h1>
-                                        <p className="fs-5 text-primary">Team Members</p>
+                                        <h1 className="display-5" data-toggle="counter-up">15</h1>
+                                        <p className="fs-5 text-primary">Years of Trust</p>
                                     </div>
                                 </div>
                             </div>

@@ -20,27 +20,27 @@ const About = () => {
                     <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div className="h-100">
                             <h1 className="display-6 mb-5">
-                                We're Here To Assist You With Exploring Protection
+                                Why Families Trust Us With Their Financial Future
                             </h1>
                             <p className="fs-5 text-primary mb-4">
-                                Bright Life Insurance is committed to providing the best financial security for your loved ones.
+                                We go beyond selling policies by ensuring you understand every detail before you sign. Transparency is our promise.
                             </p>
                             <div className="row g-4 mb-4">
                                 <div className="col-sm-6">
                                     <div className="d-flex align-items-center">
                                         <img className="flex-shrink-0 me-3" src="/img/icon/icon-04-primary.png" alt="" />
-                                        <h5 className="mb-0">Flexible Insurance Plans</h5>
+                                        <h5 className="mb-0">Hassle-Free Claims</h5>
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="d-flex align-items-center">
                                         <img className="flex-shrink-0 me-3" src="/img/icon/icon-03-primary.png" alt="" />
-                                        <h5 className="mb-0">Money Back Guarantee</h5>
+                                        <h5 className="mb-0">24/7 Expert Support</h5>
                                     </div>
                                 </div>
                             </div>
                             <p className="mb-4">
-                                With over 25 years of experience and 1300+ happy clients, S. Sonai leads Bright Life Insurance to ensure you get the right coverage. Life, Health, or Motor - we have you covered.
+                                Choosing the right insurance can be overwhelming. We simplify the process with clear terms, honest advice, and a commitment to standing by your side when you need us most. Experience a service that puts your interests first.
                             </p>
                             <div className="border-top mt-4 pt-4">
                                 <div className="d-flex align-items-center">
