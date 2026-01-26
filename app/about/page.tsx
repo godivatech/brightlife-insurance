@@ -56,7 +56,6 @@ export default function About() {
                                 </p>
                                 <div className="border-top mt-4 pt-4">
                                     <div className="d-flex align-items-center">
-                                        <img className="flex-shrink-0 rounded-circle me-3" src="/img/profile.jpg" alt="" />
                                         <h5 className="mb-0">Call Us: +91 99429 80040</h5>
                                     </div>
                                 </div>
@@ -116,7 +115,7 @@ export default function About() {
                     <div className="row g-4">
                         <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="team-item rounded">
-                                <img className="img-fluid" src="/img/team-1.jpg" alt="" />
+                                <img className="img-fluid" src="/img/Profile.png" alt="" />
                                 <div className="text-center p-4">
                                     <h5>S. Sonai</h5>
                                     <span>Managing Director</span>

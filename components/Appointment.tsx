@@ -12,9 +12,8 @@ const Appointment = () => {
                         <p className="text-white mb-5">
                             Contact us today to schedule a consultation with our experts. We are here to answer all your queries and help you choose the best plan.
                         </p>
-                        <div className="bg-white rounded p-3">
+                        <div className="bg-white rounded p-1">
                             <div className="d-flex align-items-center bg-primary rounded p-3">
-                                <img className="flex-shrink-0 rounded-circle me-3" src="/img/profile.jpg" alt="" />
                                 <h5 className="text-white mb-0">Call Us: +91 99429 80040</h5>
                             </div>
                         </div>

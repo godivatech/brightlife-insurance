@@ -44,7 +44,6 @@ const About = () => {
                             </p>
                             <div className="border-top mt-4 pt-4">
                                 <div className="d-flex align-items-center">
-                                    <img className="flex-shrink-0 rounded-circle me-3" src="/img/profile.jpg" alt="" />
                                     <h5 className="mb-0">Call Us: +91 99429 80040</h5>
                                 </div>
                             </div>
