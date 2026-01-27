@@ -24,3 +24,36 @@ body {
   color: var(--foreground);
   font-family: 'Poppins', sans-serif;
 }
+
+/* Custom Responsive Components */
+.experience-box {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 991.98px) {
+  .experience-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .experience-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .experience-box h1 {
+    font-size: 1.8rem;
+    /* Smaller font on mobile */
+  }
+
+  .experience-box h2 {
+    font-size: 1rem;
+  }
+
+  .experience-box h5 {
+    font-size: 0.8rem;
+  }
+}
