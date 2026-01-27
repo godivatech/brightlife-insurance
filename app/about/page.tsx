@@ -20,7 +20,7 @@ export default function About() {
                     <div className="row g-5">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style={{ minHeight: '400px' }}>
-                                <img className="position-absolute w-100 h-100" src="/img/about.png" alt="" style={{ objectFit: 'cover' }} />
+                                <img className="position-absolute w-100 h-100 about-profile-img" src="/img/Profile.png" alt="" style={{ objectFit: 'cover' }} />
                                 <div className="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3 experience-box">
                                     <div className="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
                                         <h1 className="text-white mb-0">25</h1>
@@ -48,7 +48,7 @@ export default function About() {
                                     <div className="col-sm-6">
                                         <div className="d-flex align-items-center">
                                             <img className="flex-shrink-0 me-3" src="/img/icon/icon-03-primary.png" alt="" />
-                                            <h5 className="mb-0">Money Back Guarantee</h5>
+                                            <h5 className="mb-0">Claims Assistance</h5>
                                         </div>
                                     </div>
                                 </div>

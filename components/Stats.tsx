@@ -39,7 +39,7 @@ const Stats = () => {
                                 </div>
                                 <div className="col-sm-6">
                                     <h1 className="display-5">
-                                        <CountUp end={5} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        <CountUp end={3} duration={2.5} enableScrollSpy scrollSpyOnce />
                                     </h1>
                                     <p className="fs-5 text-primary">Insurance Products</p>
                                 </div>

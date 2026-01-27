@@ -36,6 +36,14 @@ body {
     width: 150px;
     height: 150px;
   }
+
+  .about-profile-img {
+    object-position: center 15% !important;
+    /* Use transform to physically shift the image left if object-position fails due to perfect width fit */
+    width: 115% !important;
+    max-width: none !important;
+    left: -1% !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -56,4 +64,12 @@ body {
   .experience-box h5 {
     font-size: 0.8rem;
   }
+
+  .experience-box h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.about-profile-img {
+  object-position: center 15%;
 }
