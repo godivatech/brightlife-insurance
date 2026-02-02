@@ -10,7 +10,7 @@ const Footer = () => {
                             className="img-fluid me-3 mb-3"
                             src="/img/Logo.jpeg"
                             alt="Bright Life Insurance"
-                            style={{ maxHeight: '80px' }}
+                            style={{ maxHeight: '65px' }}
                         />
                         <p>
                             Bright Life Insurance is dedicated to providing the best financial security. We specialize in Life, Health, and Motor Insurance tailored to your needs.

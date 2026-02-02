@@ -67,7 +67,7 @@ const Navbar = () => {
                             src="/img/Logo.jpeg"
                             alt="Bright Life Insurance"
                             // Inline fallback for desktop, overridden by CSS !important on mobile
-                            style={{ maxHeight: '80px' }}
+                            style={{ maxHeight: '65px' }}
                         />
                     </h1>
                 </Link>
