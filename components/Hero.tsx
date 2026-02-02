@@ -10,12 +10,12 @@ const Hero = () => {
                         <div className="carousel-caption">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-12 col-lg-6">
+                                    <div className="col-12 col-lg-10">
                                         <h1 className="display-3 text-dark mb-4 animated slideInDown">
-                                            Insurance Creates Wealth For Everyone
+                                            Insurance Creates Wealth <br /> For Everyone
                                         </h1>
                                         <p className="fs-5 text-body mb-5 d-none d-lg-block">
-                                            Secure your future with Bright Life Insurance. We provide comprehensive Life, Health, and Motor coverage for you and your family.
+                                            Secure your future with Bright Life Insurance. We provide comprehensive Life, Health, <br /> and Motor coverage for you and your family.
                                         </p>
                                         <a href="" className="btn btn-primary py-3 px-5">More Details</a>
                                     </div>

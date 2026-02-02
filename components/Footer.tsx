@@ -2,12 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div className="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="row g-5">
                     <div className="col-lg-3 col-md-6">
                         <img
-                            className="img-fluid me-3"
+                            className="img-fluid me-3 mb-3"
                             src="/img/Logo.jpeg"
                             alt="Bright Life Insurance"
                             style={{ maxHeight: '80px' }}
@@ -16,7 +16,7 @@ const Footer = () => {
                             Bright Life Insurance is dedicated to providing the best financial security. We specialize in Life, Health, and Motor Insurance tailored to your needs.
                         </p>
                         <div className="d-flex pt-2">
-                            <a className="btn btn-square me-1" href="">
+                            <a className="btn btn-square me-3" href="">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
                             <a className="btn btn-square me-0" href="">

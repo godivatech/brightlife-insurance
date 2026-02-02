@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import PageHeader from '@/components/PageHeader';
+import CountUp from 'react-countup';
 
 export default function About() {
     return (
@@ -13,7 +15,6 @@ export default function About() {
                 ]}
             />
 
-            {/* About Start */}
             {/* About Start */}
             <div className="container-xxl py-5">
                 <div className="container">
@@ -84,19 +85,27 @@ export default function About() {
                             <div className="h-100 px-4 pe-lg-0">
                                 <div className="row g-5">
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">1300</h1>
+                                        <h1 className="display-5">
+                                            <CountUp end={1300} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        </h1>
                                         <p className="fs-5 text-primary">Happy Families</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">500</h1>
+                                        <h1 className="display-5">
+                                            <CountUp end={500} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        </h1>
                                         <p className="fs-5 text-primary">Policies Active</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">98</h1>
+                                        <h1 className="display-5">
+                                            <CountUp end={98} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        </h1>
                                         <p className="fs-5 text-primary">Claims Settled (%)</p>
                                     </div>
                                     <div className="col-sm-6">
-                                        <h1 className="display-5" data-toggle="counter-up">15</h1>
+                                        <h1 className="display-5">
+                                            <CountUp end={15} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        </h1>
                                         <p className="fs-5 text-primary">Years of Trust</p>
                                     </div>
                                 </div>
