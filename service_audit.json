@@ -1,0 +1,73 @@
+{
+    "1_structure": {
+        "question": "What is the current Services page structure?",
+        "answer": "Static content (hardcoded JSX components in `app/service/page.tsx` and `components/Services.tsx`)."
+    },
+    "2_storage": {
+        "question": "How are services stored?",
+        "answer": "They are not stored in any external or internal data structure. The code is entirely hardcoded in the templates."
+    },
+    "3_categories": {
+        "question": "Current main service categories - list all.",
+        "answer": [
+            "Life Insurance",
+            "Health Insurance",
+            "Home Insurance",
+            "Motor Insurance"
+        ]
+    },
+    "4_life_insurance": {
+        "question": "Under 'Life Insurance' what items are currently shown?",
+        "answer": "Only a short description text. LIC is NOT present. There are no providers or plans listed."
+    },
+    "5_health_insurance": {
+        "question": "Under 'Health Insurance' what items are currently shown?",
+        "answer": "Only a short description text. Galaxy is NOT present. There are no providers, plans, or categories listed."
+    },
+    "6_hierarchy": {
+        "question": "Is there a 3rd level hierarchy? If yes, show the structure.",
+        "answer": "No. It is a flat, single-level list of generic service cards."
+    },
+    "7_dynamic_details": {
+        "question": "Are service detail pages dynamic?",
+        "answer": "No. Service detail pages do not exist. The 'Read More' links present on the cards currently point to empty hrefs (`href=\"\"`)."
+    },
+    "8_reusable_component": {
+        "question": "Is there a reusable service detail component?",
+        "answer": "No."
+    },
+    "9_routing": {
+        "question": "How is routing handled?",
+        "answer": "Simple static Next.js App Router routing. The `/service` path maps directly to `app/service/page.tsx`. There is no dynamic routing parameter configured (e.g., no `[slug]`)."
+    },
+    "10_cms_editable": {
+        "question": "Is the content editable from an admin panel / CMS?",
+        "answer": "No. There is no CMS or admin panel connected; it is directly hardcoded into the source code."
+    },
+    "11_service_features_support": {
+        "question": "Do services support feature list, benefits, FAQ, CTA form?",
+        "answer": {
+            "feature_list": false,
+            "benefits_section": false,
+            "faq": false,
+            "cta_form": false
+        },
+        "note": "They only support a simple icon, title, description, and an empty 'Read More' button."
+    },
+    "12_data_model_separation": {
+        "question": "Are providers and plans already separated in the data model?",
+        "answer": "No, because there is no data model at all (everything is in one flat visual list inside JSX)."
+    },
+    "13_json_data_object": {
+        "question": "Is there an existing JSON/data object for services?",
+        "answer": "No."
+    },
+    "14_ui_layout": {
+        "question": "Is the UI card-based, tab-based, or accordion-based?",
+        "answer": "Card-based."
+    },
+    "15_nested_structure_recommendation": {
+        "question": "Should new insurance content follow the same layout, or can we introduce a nested structure?",
+        "answer": "Since the current layout is extremely basic with no dynamic capabilities or data architecture, it is highly recommended to build a new nested structure (e.g., Service -> Provider -> Plan) and implement dynamic routing to support scaling the website's content."
+    }
+}

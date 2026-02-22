@@ -1,6 +1,55 @@
 import React from 'react';
 
-const Appointment = () => {
+interface AppointmentProps {
+    isSidebar?: boolean;
+}
+
+const Appointment: React.FC<AppointmentProps> = ({ isSidebar = false }) => {
+    if (isSidebar) {
+        return (
+            <div className="bg-light rounded p-4 wow fadeIn" data-wow-delay="0.1s">
+                <h4 className="mb-4">Get an Appointment</h4>
+                <form>
+                    <div className="row g-3">
+                        <div className="col-12">
+                            <div className="form-floating">
+                                <input type="text" className="form-control" id="sidebar-gname" placeholder="Your Name" />
+                                <label htmlFor="sidebar-gname">Your Name</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="form-floating">
+                                <input type="email" className="form-control" id="sidebar-gmail" placeholder="Your Email" />
+                                <label htmlFor="sidebar-gmail">Your Email</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="form-floating">
+                                <input type="text" className="form-control" id="sidebar-cname" placeholder="Your Mobile" />
+                                <label htmlFor="sidebar-cname">Your Mobile</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="form-floating">
+                                <input type="text" className="form-control" id="sidebar-cage" placeholder="Service Type" />
+                                <label htmlFor="sidebar-cage">Service Type</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="form-floating">
+                                <textarea className="form-control" placeholder="Leave a message here" id="sidebar-message" style={{ height: '80px' }}></textarea>
+                                <label htmlFor="sidebar-message">Message</label>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <button className="btn btn-primary w-100 py-3" type="submit">Get Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        );
+    }
+
     return (
         <div className="container-fluid appointment my-5 py-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">

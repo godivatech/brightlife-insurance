@@ -33,15 +33,15 @@ const Stats = () => {
                                 </div>
                                 <div className="col-sm-6">
                                     <h1 className="display-5">
-                                        <CountUp end={1000} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        <CountUp end={60} duration={2.5} enableScrollSpy scrollSpyOnce />%
                                     </h1>
                                     <p className="fs-5 text-primary">Claims Settled</p>
                                 </div>
                                 <div className="col-sm-6">
                                     <h1 className="display-5">
-                                        <CountUp end={3} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                        <CountUp end={4} duration={2.5} enableScrollSpy scrollSpyOnce />
                                     </h1>
-                                    <p className="fs-5 text-primary">Insurance Products</p>
+                                    <p className="fs-5 text-primary">Insurance Services</p>
                                 </div>
                             </div>
                         </div>

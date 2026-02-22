@@ -1,0 +1,46 @@
+{
+    "1_dynamic_routes": {
+        "question": "Can we create dynamic routes using the App Router?",
+        "answer": "Yes. The project uses the Next.js App Router (the `app` directory). We can easily create nested folders like `app/service/[service]/page.tsx`, `app/service/[service]/[provider]/page.tsx`, etc., for dynamic routing."
+    },
+    "2_tech_stack": {
+        "question": "Is the project using TypeScript, Tailwind, or any UI library?",
+        "answer": {
+            "typescript": "Yes (uses `.tsx` files and `tsconfig.json`).",
+            "tailwind": "Yes (Tailwind CSS v4 is configured in `package.json` and `globals.css`).",
+            "ui_library": "No dedicated UI component library (like MUI or shadcn/ui) is installed, though the codebase heavily utilizes Bootstrap classes alongside custom CSS and Tailwind."
+        }
+    },
+    "3_reusable_data_files": {
+        "question": "Where should reusable data files live?",
+        "answer": "Conventionally, they should live in a `data/` or `lib/` directory at the root of the project (e.g., `/data/services.ts` or `/lib/data.ts`). This separates business logic and static data from the routing logic."
+    },
+    "4_service_card_props": {
+        "question": "Can the existing Service Card component accept dynamic props?",
+        "answer": "No. Currently, the service cards are hardcoded as plain JSX directly inside the `Services.tsx` component. We will need to extract a reusable `<ServiceCard />` component that accepts dynamic props (title, description, slug, icon)."
+    },
+    "5_data_strategy": {
+        "question": "Should we: A) Keep services as static data or B) Connect to a CMS / database later?",
+        "answer": "A) Keep services as static data (local TS/JSON file) for now. This approach allows us to rapidly build out the dynamic routing structure, components, and data model. Once everything is working visually, we can easily swap the local fetch with a CMS or database."
+    },
+    "6_current_url": {
+        "question": "Confirm the current URL for the service page.",
+        "answer": "The URL is `/service` (based on the `app/service` directory)."
+    },
+    "7_inner_page_layout": {
+        "question": "Do we already have a layout for inner pages?",
+        "answer": "Yes. The project has a `<PageHeader />` component that takes dynamic `title` and `breadcrumbs` props to render the hero section. We can wrap inner page content below this component."
+    },
+    "8_common_cta": {
+        "question": "Is there a common CTA component that we can reuse on all service detail pages?",
+        "answer": "Yes. There is an `<Appointment />` component in the `components/` folder that can be reused perfectly as a lead-generation CTA on every service detail page."
+    },
+    "9_seo_metadata": {
+        "question": "Do we need SEO dynamic metadata for each service page?",
+        "answer": "Yes. We should use the Next.js App Router's `generateMetadata` function on the dynamic routes to automatically generate SEO fields (title, meta description, schema) based on the specific service/provider data."
+    },
+    "10_page_design": {
+        "question": "Should the service detail page design match current theme or new structured layout?",
+        "answer": "It should match the current theme (reusing existing styling, colors, and components like `<PageHeader />` and `<Appointment />`) but introduce a new structured content layout (e.g., a 2-column layout with a sidebar for other services and a main area for service features, benefits, and descriptions)."
+    }
+}

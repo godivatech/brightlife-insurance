@@ -73,3 +73,8 @@ body {
 .about-profile-img {
   object-position: center 15%;
 }
+
+/* Fix for Tailwind CSS and Bootstrap CSS conflict on .collapse class */
+.collapse.show {
+  visibility: visible !important;
+}

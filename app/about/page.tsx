@@ -98,7 +98,7 @@ export default function About() {
                                     </div>
                                     <div className="col-sm-6">
                                         <h1 className="display-5">
-                                            <CountUp end={98} duration={2.5} enableScrollSpy scrollSpyOnce />
+                                            <CountUp end={60} duration={2.5} enableScrollSpy scrollSpyOnce />
                                         </h1>
                                         <p className="fs-5 text-primary">Claims Settled (%)</p>
                                     </div>

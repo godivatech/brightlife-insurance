@@ -97,7 +97,7 @@ const Navbar = () => {
                             Contact Us
                         </a>
                     </div>
-                    <a href="/appointment" className="btn btn-primary px-3 mt-3 mt-lg-0">
+                    <a href="/appointment" className="btn btn-primary px-3 mt-3 mt-lg-0 text-white">
                         Get A Quote
                     </a>
                 </div>
