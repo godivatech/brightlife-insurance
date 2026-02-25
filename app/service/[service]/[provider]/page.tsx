@@ -48,7 +48,7 @@ export default async function ProviderDetail({ params }: Props) {
                     <div className="row g-5">
                         {/* Main Content (Left Column) */}
                         <div className="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                            <img className="img-fluid rounded mb-5 w-100" src="/img/carousel-3.jpg" alt={provider.name} style={{ objectFit: 'cover', height: '400px' }} />
+                            <img className="img-fluid rounded mb-5 w-100" src="/img/carousel-2.png" alt={provider.name} style={{ objectFit: 'cover', height: '400px' }} />
                             <h2 className="mb-4">{provider.name}</h2>
                             <p className="mb-5 fs-5 text-muted">{provider.description}</p>
 

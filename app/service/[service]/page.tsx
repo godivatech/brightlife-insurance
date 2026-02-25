@@ -45,7 +45,12 @@ export default async function ServiceDetail({ params }: Props) {
                     <div className="row g-5">
                         {/* Main Content (Left Column) */}
                         <div className="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                            <img className="img-fluid rounded mb-5 w-100" src="/img/carousel-2.jpg" alt={service.name} style={{ objectFit: 'cover', height: '400px' }} />
+                            <img
+                                className="img-fluid rounded mb-5 w-100"
+                                src={service.slug === 'life-insurance' ? "/img/carousel-1.png" : "/img/carousel-2.png"}
+                                alt={service.name}
+                                style={{ objectFit: 'cover', height: '400px' }}
+                            />
                             <h2 className="mb-4">{service.name}</h2>
                             <p className="mb-5 fs-5 text-muted">{service.description}</p>
 
