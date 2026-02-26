@@ -1,5 +1,6 @@
 
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Features from "@/components/Features";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Partners />
       <About />
       <Stats />
       <VideoSection />
