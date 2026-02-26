@@ -47,12 +47,6 @@ const Footer = () => {
                         <a className="btn btn-link" href="/service">
                             Our Services
                         </a>
-                        <a className="btn btn-link" href="">
-                            Terms & Condition
-                        </a>
-                        <a className="btn btn-link" href="">
-                            Support
-                        </a>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-light mb-4">Newsletter</h5>
