@@ -23,7 +23,17 @@ const Services = () => {
                                 <p className="mb-4">
                                     {service.description}
                                 </p>
-                                <a className="btn btn-light px-3" href={`/service/${service.slug}`}>Read More</a>
+                                <div className="d-flex align-items-center flex-wrap gap-2">
+                                    <a className="btn btn-light px-3" href={`/service/${service.slug}`}>Read More</a>
+                                    <a
+                                        className="btn btn-outline-success border-2 px-3 d-flex align-items-center"
+                                        href={`https://wa.me/919942980040?text=Hello%20Bright%20Life%20Insurance%2C%20I%20am%20interested%20in%20your%20${encodeURIComponent(service.name)}%20services.%20Please%20provide%20more%20details.`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <i className="fab fa-whatsapp me-2"></i> WhatsApp
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}

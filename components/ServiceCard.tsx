@@ -18,7 +18,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, href, ico
                 <h4 className="mb-0">{title}</h4>
             </div>
             <p className="mb-4">{description}</p>
-            <Link className="btn btn-light px-3" href={href}>Read More</Link>
+            <div className="d-flex align-items-center flex-wrap gap-2">
+                <Link className="btn btn-light px-3" href={href}>Read More</Link>
+                <a
+                    className="btn btn-outline-success border-2 px-3 d-flex align-items-center"
+                    href={`https://wa.me/919942980040?text=Hello%20Bright%20Life%20Insurance%2C%20I%20am%20interested%20in%20your%20${encodeURIComponent(title)}%20services.%20Please%20provide%20more%20details.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i className="fab fa-whatsapp me-2"></i> WhatsApp
+                </a>
+            </div>
         </div>
     );
 };
