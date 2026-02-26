@@ -44,7 +44,7 @@ const About = () => {
                             </p>
                             <div className="border-top mt-4 pt-4">
                                 <div className="d-flex align-items-center">
-                                    <h5 className="mb-0">Call Us: +91 99429 80040</h5>
+                                    <h5 className="mb-0">Call Us: +91 99429 80040, +91 98941 66531</h5>
                                 </div>
                             </div>
                         </div>

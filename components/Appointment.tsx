@@ -248,7 +248,7 @@ const Appointment: React.FC<AppointmentProps> = ({ isSidebar = false }) => {
                         </p>
                         <div className="bg-white rounded p-1">
                             <div className="d-flex align-items-center bg-primary rounded p-3">
-                                <h5 className="text-white mb-0">Call Us: +91 99429 80040</h5>
+                                <h5 className="text-white mb-0">Call Us: +91 99429 80040, +91 98941 66531</h5>
                             </div>
                         </div>
                     </div>

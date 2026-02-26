@@ -7,11 +7,11 @@ const Topbar = () => {
                 <div className="col-lg-7 px-5 text-start">
                     <div className="h-100 d-inline-flex align-items-center me-4">
                         <small className="fa fa-phone-alt me-2"></small>
-                        <small>+91 99429 80040</small>
+                        <small>+91 99429 80040, +91 98941 66531</small>
                     </div>
                     <div className="h-100 d-inline-flex align-items-center me-4">
                         <small className="far fa-envelope-open me-2"></small>
-                        <small>info@brightlife.com</small>
+                        <small>cucisonai@gmail.com</small>
                     </div>
                     <div className="h-100 d-inline-flex align-items-center me-4">
                         <small className="far fa-clock me-2"></small>
@@ -20,8 +20,8 @@ const Topbar = () => {
                 </div>
                 <div className="col-lg-5 px-5 text-end">
                     <div className="h-100 d-inline-flex align-items-center">
-                        <a className="text-white-50 ms-4" href=""><i className="fab fa-facebook-f"></i></a>
-                        <a className="text-white-50 ms-4" href=""><i className="fab fa-instagram"></i></a>
+                        <a className="text-white-50 ms-4" href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                        <a className="text-white-50 ms-4" href="https://www.instagram.com/brightlifemdu/" target="_blank"><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

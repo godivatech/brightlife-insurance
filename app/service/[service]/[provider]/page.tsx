@@ -6,6 +6,7 @@ import Appointment from '@/components/Appointment';
 import { services } from '@/data/services';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import PlanSearch from '@/components/PlanSearch';
 
 interface Props {
     params: Promise<{ service: string; provider: string; }>;
@@ -87,20 +88,11 @@ export default async function ProviderDetail({ params }: Props) {
                             </div>
 
                             <h3 className="mb-4">Available Plans</h3>
-                            <div className="row g-4">
-                                {provider.plans?.map((plan) => (
-                                    <div key={plan.slug} className="col-md-6">
-                                        <PlanCard
-                                            title={plan.name}
-                                            description={plan.description}
-                                            href={`/service/${service.slug}/${provider.slug}/${plan.slug}`}
-                                        />
-                                    </div>
-                                ))}
-                                {(!provider.plans || provider.plans.length === 0) && (
-                                    <p>No plans available at the moment.</p>
-                                )}
-                            </div>
+                            <PlanSearch
+                                plans={provider.plans || []}
+                                serviceSlug={service.slug}
+                                providerSlug={provider.slug}
+                            />
                         </div>
 
                         {/* Sidebar (Right Column) */}

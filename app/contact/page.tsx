@@ -86,7 +86,7 @@ export default function Contact() {
                             <div className="position-relative rounded overflow-hidden h-100">
                                 <iframe
                                     className="position-relative w-100 h-100"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15719.961919427678!2d78.1345!3d9.9554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5bc64030639%3A0x6b447881643c7262!2sIyer%20Bungalow%2C%20Madurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15720.408994474728!2d78.0910!3d9.9238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5bc64030639%3A0x6b447881643c7262!2sS.S.+Colony%2C+Madurai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                                     frameBorder="0"
                                     style={{ minHeight: '450px', border: 0 }}
                                     allowFullScreen={true}

@@ -19,10 +19,8 @@ const Team = () => {
                                 <h5>S. Sonai</h5>
                                 <p>Managing Director</p>
                                 <div className="d-flex justify-content-center">
-                                    <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-twitter"></i></a>
-                                    <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                    <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-youtube"></i></a>
-                                    <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-linkedin-in"></i></a>
+                                    <a className="btn btn-square btn-light m-1" href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                    <a className="btn btn-square btn-light m-1" href="https://www.instagram.com/brightlifemdu/" target="_blank"><i className="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -16,10 +16,10 @@ const Footer = () => {
                             Bright Life Insurance is dedicated to providing the best financial security. We specialize in Life, Health, and Motor Insurance tailored to your needs.
                         </p>
                         <div className="d-flex pt-2">
-                            <a className="btn btn-square me-3" href="">
+                            <a className="btn btn-square me-3" href="https://www.facebook.com/" target="_blank">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a className="btn btn-square me-0" href="">
+                            <a className="btn btn-square me-0" href="https://www.instagram.com/brightlifemdu/" target="_blank">
                                 <i className="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -27,13 +27,13 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-light mb-4">Address</h5>
                         <p>
-                            <i className="fa fa-map-marker-alt me-3"></i>iyerbungalow,madurai
+                            <i className="fa fa-map-marker-alt me-3"></i>No 23/72, Ram Nagar 3rd Street, S.S Colony, Madurai. 625016.
                         </p>
                         <p>
-                            <i className="fa fa-phone-alt me-3"></i>+91 99429 80040
+                            <i className="fa fa-phone-alt me-3"></i>+91 99429 80040, +91 98941 66531
                         </p>
                         <p>
-                            <i className="fa fa-envelope me-3"></i>info@brightlife.com
+                            <i className="fa fa-envelope me-3"></i>cucisonai@gmail.com
                         </p>
                     </div>
                     <div className="col-lg-3 col-md-6">
