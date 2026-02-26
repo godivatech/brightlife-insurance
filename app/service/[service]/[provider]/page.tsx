@@ -54,7 +54,7 @@ export default async function ProviderDetail({ params }: Props) {
 
                             <h3 className="mb-4">Why {provider.name}?</h3>
                             <p className="mb-4">
-                                As a premier insurance provider, {provider.name} is dedicated to delivering comprehensive policies that secure your future. With a track record of high claim settlement ratios and exceptional customer service, {provider.name} stands as a pillar of trust in the industry.
+                                {provider.whyChoose}
                             </p>
 
                             <h3 className="mb-4 mt-5">How to Apply</h3>

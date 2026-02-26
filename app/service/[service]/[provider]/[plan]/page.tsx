@@ -57,7 +57,7 @@ export default async function PlanDetail({ params }: Props) {
 
                             <h3 className="mb-4">Why Choose This Plan?</h3>
                             <p className="mb-4">
-                                This plan is designed to provide comprehensive coverage and peace of mind. Whether you are looking for secure investments, health protection, or family security, {plan.name} offers industry-leading benefits tailored for your needs.
+                                {plan.whyChoose}
                             </p>
 
                             {plan.features && plan.features.length > 0 && (

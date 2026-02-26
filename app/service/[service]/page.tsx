@@ -56,43 +56,23 @@ export default async function ServiceDetail({ params }: Props) {
 
                             <h3 className="mb-4">Why Choose Our {service.name}?</h3>
                             <p className="mb-4">
-                                Our {service.name} offerings are designed to provide maximum security, rapid claim settlement, and comprehensive financial protection. Partnering with top-tier providers, we ensure you get the best value and coverage available in the market.
+                                {service.whyChoose}
                             </p>
 
-                            <div className="row g-4 mb-5">
-                                <div className="col-sm-6">
-                                    <div className="d-flex align-items-center">
-                                        <div className="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i className="fa fa-check text-white"></i>
+                            {service.keyBenefits && service.keyBenefits.length > 0 && (
+                                <div className="row g-4 mb-5">
+                                    {service.keyBenefits.map((benefit, i) => (
+                                        <div key={i} className="col-sm-6">
+                                            <div className="d-flex align-items-center">
+                                                <div className="btn-lg-square bg-primary rounded-circle me-3">
+                                                    <i className="fa fa-check text-white"></i>
+                                                </div>
+                                                <h5 className="mb-0">{benefit}</h5>
+                                            </div>
                                         </div>
-                                        <h5 className="mb-0">Fast Claim Settlement</h5>
-                                    </div>
+                                    ))}
                                 </div>
-                                <div className="col-sm-6">
-                                    <div className="d-flex align-items-center">
-                                        <div className="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i className="fa fa-check text-white"></i>
-                                        </div>
-                                        <h5 className="mb-0">24/7 Support</h5>
-                                    </div>
-                                </div>
-                                <div className="col-sm-6">
-                                    <div className="d-flex align-items-center">
-                                        <div className="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i className="fa fa-check text-white"></i>
-                                        </div>
-                                        <h5 className="mb-0">Tailored Coverage</h5>
-                                    </div>
-                                </div>
-                                <div className="col-sm-6">
-                                    <div className="d-flex align-items-center">
-                                        <div className="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i className="fa fa-check text-white"></i>
-                                        </div>
-                                        <h5 className="mb-0">Expert Advisors</h5>
-                                    </div>
-                                </div>
-                            </div>
+                            )}
 
                             <h3 className="mb-4">Our Providers</h3>
                             <div className="row g-4">
