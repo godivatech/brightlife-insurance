@@ -16,6 +16,15 @@ const Partners = () => {
 
     return (
         <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style={{ background: '#f8f9fa' }}>
+            <style dangerouslySetInnerHTML={{
+                __html: `
+                .partner-logo-img {
+                    transition: transform 0.3s ease-in-out;
+                }
+                .partner-item:hover .partner-logo-img {
+                    transform: scale(1.15);
+                }
+            `}} />
             <div className="container">
                 <div className="text-center mx-auto mb-5" style={{ maxWidth: '600px' }}>
                     <h5 className="section-title ff-secondary text-center text-primary fw-normal">Our Partners</h5>
@@ -28,10 +37,9 @@ const Partners = () => {
                                 <img
                                     src={partner.logo}
                                     alt={partner.alt}
-                                    className="img-fluid d-block"
-                                    style={{ maxHeight: '75px', width: 'auto', objectFit: 'contain' }}
+                                    className="img-fluid d-block partner-logo-img"
+                                    style={{ maxHeight: '110px', width: 'auto', objectFit: 'contain' }}
                                 />
-                                <p className="mt-3 mb-0 fw-bold text-muted small">{partner.name}</p>
                             </div>
                         </div>
                     ))}

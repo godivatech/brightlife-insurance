@@ -116,91 +116,44 @@ export default function About() {
             </div>
             {/* Facts End */}
 
-            {/* Team Start */}
+            {/* Core Values Start */}
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="text-center mx-auto" style={{ maxWidth: '500px' }}>
-                        <h1 className="display-6 mb-5">Meet Our Professional Team Members</h1>
+                        <h1 className="display-6 mb-5">Our Core Values & Promise</h1>
                     </div>
-                    <div className="row g-4">
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="team-item rounded">
-                                <img className="img-fluid" src="/img/Profile.png" alt="" />
-                                <div className="text-center p-4">
-                                    <h5>S. Sonai</h5>
-                                    <span>Managing Director</span>
+                    <div className="row g-4 justify-content-center">
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="service-item bg-light rounded h-100 p-5">
+                                <div className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style={{ width: '65px', height: '65px' }}>
+                                    <i className="fa fa-shield-alt text-primary fs-4"></i>
                                 </div>
-                                <div className="team-text text-center bg-white p-4">
-                                    <h5>S. Sonai</h5>
-                                    <p>Managing Director</p>
-                                    <div className="d-flex justify-content-center">
-                                        <a className="btn btn-square btn-light m-1" href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href="https://www.instagram.com/brightlifemdu/" target="_blank"><i className="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
+                                <h4 className="mb-3">Integrity & Transparency</h4>
+                                <p className="mb-4">We believe in clear, honest communication. You will always understand your coverage, terms, and options without any hidden surprises.</p>
                             </div>
                         </div>
-                        {/* <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div className="team-item rounded">
-                                <img className="img-fluid" src="/img/team-2.jpg" alt="" />
-                                <div className="text-center p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                            <div className="service-item bg-light rounded h-100 p-5">
+                                <div className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style={{ width: '65px', height: '65px' }}>
+                                    <i className="fa fa-users text-primary fs-4"></i>
                                 </div>
-                                <div className="team-text text-center bg-white p-4">
-                                    <h5>Full Name</h5>
-                                    <p>Designation</p>
-                                    <div className="d-flex justify-content-center">
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-youtube"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
+                                <h4 className="mb-3">Customer-First Approach</h4>
+                                <p className="mb-4">Your needs are our priority. We take the time to listen, understand your unique situation, and tailor solutions that truly protect your family.</p>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div className="team-item rounded">
-                                <img className="img-fluid" src="/img/team-3.jpg" alt="" />
-                                <div className="text-center p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
+                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div className="service-item bg-light rounded h-100 p-5">
+                                <div className="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style={{ width: '65px', height: '65px' }}>
+                                    <i className="fa fa-handshake text-primary fs-4"></i>
                                 </div>
-                                <div className="team-text text-center bg-white p-4">
-                                    <h5>Full Name</h5>
-                                    <p>Designation</p>
-                                    <div className="d-flex justify-content-center">
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-youtube"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
+                                <h4 className="mb-3">Lifelong Support</h4>
+                                <p className="mb-4">We don't just sell policies and disappear. From policy adjustments to claims assistance, we are by your side for the entire journey.</p>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                            <div className="team-item rounded">
-                                <img className="img-fluid" src="/img/team-4.jpg" alt="" />
-                                <div className="text-center p-4">
-                                    <h5>Full Name</h5>
-                                    <span>Designation</span>
-                                </div>
-                                <div className="team-text text-center bg-white p-4">
-                                    <h5>Full Name</h5>
-                                    <p>Designation</p>
-                                    <div className="d-flex justify-content-center">
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-youtube"></i></a>
-                                        <a className="btn btn-square btn-light m-1" href=""><i className="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
-            {/* Team End */}
+            {/* Core Values End */}
         </>
     );
 }
