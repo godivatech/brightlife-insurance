@@ -4,6 +4,7 @@ export type Plan = {
   description: string;
   features?: string[];
   whyChoose?: string;
+  category?: string;
 };
 
 export type Provider = {
@@ -42,74 +43,76 @@ export const services: Service[] = [
         description: "Life Insurance Corporation of India — the nation's largest and most trusted insurer with a claim settlement ratio above 98%, offering a diverse portfolio of protection and savings plans.",
         whyChoose: "LIC (Life Insurance Corporation of India) has been safeguarding Indian families since 1956. With a claim settlement ratio consistently above 98%, LIC is synonymous with trust and reliability. As an authorised LIC agent with over 25 years of experience, BrightLife Insurance helps you navigate LIC's vast product portfolio — from simple term plans to ULIPs and pension products — ensuring you choose a plan that perfectly aligns with your life goals and financial capacity. LIC's sovereign backing and government guarantee make it the most secure insurance choice available in India.",
         plans: [
-          // SPECIAL / MISC CATEGORY
-          {
-            name: "Bima Lakshmi",
-            slug: "lic-bima-lakshmi",
-            description: "A specialized savings and protection plan designed to empower and secure the financial future of women.",
-            whyChoose: "Bima Lakshmi is a dedicated plan reflecting LIC's commitment to women's financial independence. It provides a unique combination of savings and life cover, tailored to meet the specific requirements of women at various life stages. Whether you are building a retirement fund, saving for a child's milestone, or seeking a primary life cover, Bima Lakshmi offers competitive returns with the absolute security of LIC."
-          },
-
           // ENDOWMENT PLANS
           {
             name: "LIC's New Endowment Plan",
             slug: "lic-new-endowment-plan",
             description: "Participating non-linked plan offering an attractive combination of protection and saving with bonus additions.",
-            whyChoose: "The LIC New Endowment Plan is a time-tested savings-cum-protection plan that earns simple reversionary bonus throughout the policy term. It is ideally suited for people who want a straightforward policy with no complex structures — pay premiums for the chosen term, earn bonuses, and receive a lump sum at maturity or upon death of the life assured. This plan is a cornerstone of sound financial planning for families."
+            whyChoose: "The LIC New Endowment Plan is a time-tested savings-cum-protection plan that earns simple reversionary bonus throughout the policy term. It is ideally suited for people who want a straightforward policy with no complex structures — pay premiums for the chosen term, earn bonuses, and receive a lump sum at maturity or upon death of the life assured. This plan is a cornerstone of sound financial planning for families.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's New Jeevan Anand",
             slug: "lic-new-jeevan-anand",
             description: "Participating non-linked plan that combines endowment savings with lifelong whole life cover after maturity.",
-            whyChoose: "LIC's New Jeevan Anand is unique — it is the only plan that gives you the best of both worlds: an endowment plan that pays out at maturity AND continues to cover you for your entire life after maturity. This means your family is protected even after you have received your savings payout. It is the perfect plan for people who want a guaranteed maturity benefit while also ensuring permanent life protection for their loved ones. Bonus accumulation throughout the policy term adds further value."
+            whyChoose: "LIC's New Jeevan Anand is unique — it is the only plan that gives you the best of both worlds: an endowment plan that pays out at maturity AND continues to cover you for your entire life after maturity. This means your family is protected even after you have received your savings payout. It is the perfect plan for people who want a guaranteed maturity benefit while also ensuring permanent life protection for their loved ones. Bonus accumulation throughout the policy term adds further value.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Single Premium Endowment Plan",
             slug: "lic-single-premium-endowment",
             description: "A participating non-linked single premium plan — pay once and enjoy life cover with bonus accumulation for the entire term.",
-            whyChoose: "If you have a lump sum available and want to put it to work as a secure, long-term savings instrument, LIC's Single Premium Endowment Plan is the answer. Pay just once, and your money grows through bonuses over the policy term while keeping a life cover active for your family. There are no annual premium obligations, making this ideal for NRIs, retirees, or anyone who has received a one-time windfall and wants a guaranteed, safe investment."
+            whyChoose: "If you have a lump sum available and want to put it to work as a secure, long-term savings instrument, LIC's Single Premium Endowment Plan is the answer. Pay just once, and your money grows through bonuses over the policy term while keeping a life cover active for your family. There are no annual premium obligations, making this ideal for NRIs, retirees, or anyone who has received a one-time windfall and wants a guaranteed, safe investment.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Jeevan Lakshya",
             slug: "lic-jeevan-lakshya",
             description: "Participating non-linked plan specially designed to secure a child's future needs with guaranteed annual income on death.",
-            whyChoose: "Jeevan Lakshya is specifically crafted for parents who want to ensure their child's milestones are never compromised. In the event of the policyholder's unfortunate death during the term, the policy does not lapse — instead, all future premiums are waived AND the nominee receives 10% of the Sum Assured annually until policy maturity, guaranteeing a regular income for the child. At maturity, the full Sum Assured with bonuses is also paid. This is an exceptional child protection plan built on LIC's unwavering reliability."
+            whyChoose: "Jeevan Lakshya is specifically crafted for parents who want to ensure their child's milestones are never compromised. In the event of the policyholder's unfortunate death during the term, the policy does not lapse — instead, all future premiums are waived AND the nominee receives 10% of the Sum Assured annually until policy maturity, guaranteeing a regular income for the child. At maturity, the full Sum Assured with bonuses is also paid. This is an exceptional child protection plan built on LIC's unwavering reliability.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Jeevan Labh",
             slug: "lic-jeevan-labh",
             description: "Limited premium paying, non-linked, participating endowment plan offering bonuses on a regular basis.",
-            whyChoose: "Jeevan Labh is one of LIC's most popular endowment plans — and for good reason. It combines the advantage of limited premium payments with the long-term growth of bonuses (both simple reversionary and final additional bonus). You pay premiums for a shorter period of 10, 15, or 16 years while the policy continues to earn bonuses until maturity. This makes Jeevan Labh ideal for salaried professionals who want to accumulate a substantial corpus for retirement or children's higher education."
+            whyChoose: "Jeevan Labh is one of LIC's most popular endowment plans — and for good reason. It combines the advantage of limited premium payments with the long-term growth of bonuses (both simple reversionary and final additional bonus). You pay premiums for a shorter period of 10, 15, or 16 years while the policy continues to earn bonuses until maturity. This makes Jeevan Labh ideal for salaried professionals who want to accumulate a substantial corpus for retirement or children's higher education.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Bima Jyoti",
             slug: "lic-bima-jyoti",
             description: "Non-linked, non-participating, individual savings plan providing guaranteed additions and life cover for a fixed term.",
-            whyChoose: "LIC's Bima Jyoti is ideal for disciplined savers who want guaranteed returns without any market risk. This plan offers guaranteed additions of ₹50 per ₹1,000 Sum Assured per year throughout the premium payment term, making your savings grow predictably. At maturity, you receive the entire Sum Assured along with all accumulated guaranteed additions — giving you a solid financial cushion for milestones like children's education, marriage, or retirement. The built-in life cover ensures your family is protected throughout the policy term."
+            whyChoose: "LIC's Bima Jyoti is ideal for disciplined savers who want guaranteed returns without any market risk. This plan offers guaranteed additions of ₹50 per ₹1,000 Sum Assured per year throughout the premium payment term, making your savings grow predictably. At maturity, you receive the entire Sum Assured along with all accumulated guaranteed additions — giving you a solid financial cushion for milestones like children's education, marriage, or retirement. The built-in life cover ensures your family is protected throughout the policy term.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Jeevan Azad",
             slug: "lic-jeevan-azad",
             description: "Limited premium payment, non-linked, non-participating plan with guaranteed additions and flexible payout option.",
-            whyChoose: "LIC's Jeevan Azad is designed for those who want to pay premiums for a shorter period but retain coverage for a longer term. With limited premium payment terms, you complete your financial commitment early and then enjoy a prolonged life cover with guaranteed additions building up in the background. At maturity, the entire Sum Assured with accumulated guaranteed additions is paid — making it a smart plan for young earners who want to close premium payments before retirement."
+            whyChoose: "LIC's Jeevan Azad is designed for those who want to pay premiums for a shorter period but retain coverage for a longer term. With limited premium payment terms, you complete your financial commitment early and then enjoy a prolonged life cover with guaranteed additions building up in the background. At maturity, the entire Sum Assured with accumulated guaranteed additions is paid — making it a smart plan for young earners who want to close premium payments before retirement.",
+            category: "Endowment & Savings"
           },
           {
             name: "Nav Jeevan Shree (Single Premium)",
             slug: "lic-nav-jeevan-shree-single",
             description: "A high-sum assured endowment plan offering localized stability and growth through a single premium commitment.",
-            whyChoose: "Nav Jeevan Shree is designed for individuals looking to secure a large corpus with a one-time investment. Providing both life cover and guaranteed returns, it is an efficient way to deploy surplus funds while ensuring long-term financial security for your family. It stands as a premium choice for HNI clients looking for the LIC trust factor."
+            whyChoose: "Nav Jeevan Shree is designed for individuals looking to secure a large corpus with a one-time investment. Providing both life cover and guaranteed returns, it is an efficient way to deploy surplus funds while ensuring long-term financial security for your family. It stands as a premium choice for HNI clients looking for the LIC trust factor.",
+            category: "Endowment & Savings"
           },
           {
             name: "Nav Jeevan Shree (Limited Premium)",
             slug: "lic-nav-jeevan-shree-limited",
             description: "A participating endowment plan featuring limited premium payments and high sum assured for comprehensive protection.",
-            whyChoose: "This variant of Nav Jeevan Shree offers the flexibility of paying premiums for a shorter duration while enjoying the full coverage of a high-value endowment policy. It is perfect for professionals in their peak earning years who want to complete their financial commitments early while securing a substantial maturity benefit for the future."
+            whyChoose: "This variant of Nav Jeevan Shree offers the flexibility of paying premiums for a shorter duration while enjoying the full coverage of a high-value endowment policy. It is perfect for professionals in their peak earning years who want to complete their financial commitments early while securing a substantial maturity benefit for the future.",
+            category: "Endowment & Savings"
           },
           {
             name: "LIC's Dhan Sanchay",
             slug: "lic-dhan-sanchay",
             description: "Non-linked, non-participating personal savings life insurance plan with guaranteed income and flexible benefit structures.",
-            whyChoose: "Dhan Sanchay is one of LIC's most flexible savings plans. It offers three distinct benefit options — allowing you to choose between an income stream during the policy term, a lump sum payout, or a combination of both. Whether you are building a retirement corpus or saving for a future commitment, Dhan Sanchay lets you lock in guaranteed returns from day one, shielding your savings from market volatility."
+            whyChoose: "Dhan Sanchay is one of LIC's most flexible savings plans. It offers three distinct benefit options — allowing you to choose between an income stream during the policy term, a lump sum payout, or a combination of both. Whether you are building a retirement corpus or saving for a future commitment, Dhan Sanchay lets you lock in guaranteed returns from day one, shielding your savings from market volatility.",
+            category: "Endowment & Savings"
           },
 
           // NEW PLANS
@@ -117,7 +120,8 @@ export const services: Service[] = [
             name: "Jan Suraksha",
             slug: "lic-jan-suraksha",
             description: "A simplified, affordable insurance plan aimed at providing basic life cover to all segments of society.",
-            whyChoose: "Jan Suraksha is designed with the mission of 'Insurance for All'. It offers a straightforward application process and extremely low premiums, making it the ideal starter policy for individuals who want to secure a basic safety net for their families without heavy financial burden. It provides the core protection every household needs."
+            whyChoose: "Jan Suraksha is designed with the mission of 'Insurance for All'. It offers a straightforward application process and extremely low premiums, making it the ideal starter policy for individuals who want to secure a basic safety net for their families without heavy financial burden. It provides the core protection every household needs.",
+            category: "Specialized Plans"
           },
 
           // MONEYBACK PLANS
@@ -125,25 +129,29 @@ export const services: Service[] = [
             name: "LIC's New Money Back Plan - 20 Years",
             slug: "lic-new-money-back-20",
             description: "Non-linked, participating plan that pays 20% of the sum assured every 5 years with a bonus-enhanced maturity payout.",
-            whyChoose: "The LIC New Money Back Plan (20 Years) is a classic money-back policy that ensures you receive funds at critical intervals — 20% of Sum Assured at the 5th, 10th, and 15th years — while the remaining 40% plus all accumulated bonuses are paid at maturity. This regular flow of funds makes it perfect for planning foreseeable expenses: a car purchase, a home renovation, or children's school fees. Life coverage remains in force for the full Sum Assured throughout the term, irrespective of survival benefits already paid."
+            whyChoose: "The LIC New Money Back Plan (20 Years) is a classic money-back policy that ensures you receive funds at critical intervals — 20% of Sum Assured at the 5th, 10th, and 15th years — while the remaining 40% plus all accumulated bonuses are paid at maturity. This regular flow of funds makes it perfect for planning foreseeable expenses: a car purchase, a home renovation, or children's school fees. Life coverage remains in force for the full Sum Assured throughout the term, irrespective of survival benefits already paid.",
+            category: "Money Back"
           },
           {
             name: "LIC's New Money Back Plan - 25 Years",
             slug: "lic-new-money-back-25",
             description: "A participating non-linked plan paying survival benefits every 5 years with enhanced life cover for a 25-year term.",
-            whyChoose: "The LIC New Money Back Plan (25 Years) extends the money-back structure over a longer horizon, giving you more time for bonus accumulation and a higher final maturity payout. Survival benefits are paid at the 5th, 10th, 15th, and 20th year, putting cash in your hands for larger life milestones over a quarter century. This plan suits younger buyers who want a long-term savings plan with built-in liquidity and strong life coverage through their prime earning years."
+            whyChoose: "The LIC New Money Back Plan (25 Years) extends the money-back structure over a longer horizon, giving you more time for bonus accumulation and a higher final maturity payout. Survival benefits are paid at the 5th, 10th, 15th, and 20th year, putting cash in your hands for larger life milestones over a quarter century. This plan suits younger buyers who want a long-term savings plan with built-in liquidity and strong life coverage through their prime earning years.",
+            category: "Money Back"
           },
           {
             name: "LIC's Bima Shree",
             slug: "lic-bima-shree",
             description: "Non-linked, participating, individual, life guaranteed savings plan aimed at high Net Worth Individuals (HNIs).",
-            whyChoose: "LIC's Bima Shree is a premium plan crafted for high-income individuals who want a policy with a high Sum Assured (minimum ₹10 lakh), regular money-back payouts, and strong bonus accumulation. It offers survival payouts at regular intervals during the policy term, keeping your liquidity intact for major expenses. The combination of guaranteed payouts, bonus income, and substantial life cover makes Bima Shree an ideal plan for executives, business owners, and professionals seeking a prestigious, high-value insurance policy."
+            whyChoose: "LIC's Bima Shree is a premium plan crafted for high-income individuals who want a policy with a high Sum Assured (minimum ₹10 lakh), regular money-back payouts, and strong bonus accumulation. It offers survival payouts at regular intervals during the policy term, keeping your liquidity intact for major expenses. The combination of guaranteed payouts, bonus income, and substantial life cover makes Bima Shree an ideal plan for executives, business owners, and professionals seeking a prestigious, high-value insurance policy.",
+            category: "Money Back"
           },
           {
             name: "LIC's Bima Ratna",
             slug: "lic-bima-ratna",
             description: "A non-linked, non-participating, individual, life insurance savings plan offering survival payouts at regular intervals.",
-            whyChoose: "LIC's Bima Ratna is a money-back style savings plan that pays you a portion of the Sum Assured at intervals before maturity — giving you liquidity when you need it most. This plan is suited for families who need periodic income for major life events (a child starting college, a planned renovation) while still keeping a life cover active. It combines protection and staged payouts in a single, straightforward policy."
+            whyChoose: "LIC's Bima Ratna is a money-back style savings plan that pays you a portion of the Sum Assured at intervals before maturity — giving you liquidity when you need it most. This plan is suited for families who need periodic income for major life events (a child starting college, a planned renovation) while still keeping a life cover active. It combines protection and staged payouts in a single, straightforward policy.",
+            category: "Money Back"
           },
 
           // WHOLELIFE PLANS
@@ -151,19 +159,22 @@ export const services: Service[] = [
             name: "LIC's Jeevan Umang",
             slug: "lic-jeevan-umang",
             description: "Non-linked, participating, individual, whole life assurance plan with annual survival benefits from the end of premium payment term.",
-            whyChoose: "LIC's Jeevan Umang is a truly unique whole life plan that pays you annually after the premium payment term is complete — effectively becoming a lifetime income source. Once your premium payment period ends (at age 100 of the life assured), you receive 8% of the Sum Assured annually as a survival benefit, for the rest of your life. At death or maturity at age 100, the full Sum Assured plus bonuses is paid. It is an exceptional retirement planning and legacy building tool for those who want a policy that keeps paying them back."
+            whyChoose: "LIC's Jeevan Umang is a truly unique whole life plan that pays you annually after the premium payment term is complete — effectively becoming a lifetime income source. Once your premium payment period ends (at age 100 of the life assured), you receive 8% of the Sum Assured annually as a survival benefit, for the rest of your life. At death or maturity at age 100, the full Sum Assured plus bonuses is paid. It is an exceptional retirement planning and legacy building tool for those who want a policy that keeps paying them back.",
+            category: "Whole Life"
           },
           {
             name: "LIC's Jeevan Utsav",
             slug: "lic-jeevan-utsav",
             description: "Non-linked, non-participating, individual, savings, whole life insurance plan with guaranteed income for life.",
-            whyChoose: "Jeevan Utsav is a whole life plan that offers guaranteed income for as long as you live, starting after the premium payment term. Unlike market-linked products, the income from Jeevan Utsav is completely guaranteed — providing you with financial security and predictability in retirement. The plan also includes a flexible 'Flexi Income' option, allowing you to defer income accumulation during the payout period. It is an excellent choice for retirement planning and ensuring a regular income stream without depending on market performance."
+            whyChoose: "Jeevan Utsav is a whole life plan that offers guaranteed income for as long as you live, starting after the premium payment term. Unlike market-linked products, the income from Jeevan Utsav is completely guaranteed — providing you with financial security and predictability in retirement. The plan also includes a flexible 'Flexi Income' option, allowing you to defer income accumulation during the payout period. It is an excellent choice for retirement planning and ensuring a regular income stream without depending on market performance.",
+            category: "Whole Life"
           },
           {
             name: "Jeevan Utsav (Single Premium)",
             slug: "lic-jeevan-utsav-single",
             description: "The whole-life guaranteed income benefit of Jeevan Utsav, now available with a single one-time premium payout.",
-            whyChoose: "For those who want to secure a lifetime of guaranteed income in one go, the Single Premium version of Jeevan Utsav is unmatched. By paying a single lump sum, you lock in a lifelong income stream that is shielded from market fluctuations. It is an ideal way to deploy a retirement corpus or windfall to ensure you never run out of reliable cash flow."
+            whyChoose: "For those who want to secure a lifetime of guaranteed income in one go, the Single Premium version of Jeevan Utsav is unmatched. By paying a single lump sum, you lock in a lifelong income stream that is shielded from market fluctuations. It is an ideal way to deploy a retirement corpus or windfall to ensure you never run out of reliable cash flow.",
+            category: "Whole Life"
           },
 
           // CHILD PLANS
@@ -171,19 +182,22 @@ export const services: Service[] = [
             name: "Child Money Back Plan",
             slug: "lic-child-money-back",
             description: "A participating money-back plan specifically designed to meet the growing educational and lifestyle needs of your child.",
-            whyChoose: "The Child Money Back plan provides liquidity exactly when it is needed most — during your child's higher education years. With survival benefits paid at key ages (18, 20, and 22), it ensures that funds are available for college admissions and related expenses. It's a reliable tool for parents to build a dedicated fund for their child's future milestones."
+            whyChoose: "The Child Money Back plan provides liquidity exactly when it is needed most — during your child's higher education years. With survival benefits paid at key ages (18, 20, and 22), it ensures that funds are available for college admissions and related expenses. It's a reliable tool for parents to build a dedicated fund for their child's future milestones.",
+            category: "Child Returns"
           },
           {
             name: "LIC's Jeevan Tarun",
             slug: "lic-jeevan-tarun",
             description: "Non-linked, participating, individual, life assurance savings plan specifically designed to fund a child's future needs.",
-            whyChoose: "Jeevan Tarun is LIC's dedicated child plan, designed to provide funds exactly when your child needs them most — from age 20 to 24. The plan pays 5%, 10%, 15%, or 20% of the Sum Assured annually between age 20 and 24 (you choose the proportion), with the remaining amount paid at maturity at age 25. This structured payout covers college years perfectly, ensuring your child completes their education without financial stress. The plan also includes a premium waiver if the parent/policyholder passes away during the term."
+            whyChoose: "Jeevan Tarun is LIC's dedicated child plan, designed to provide funds exactly when your child needs them most — from age 20 to 24. The plan pays 5%, 10%, 15%, or 20% of the Sum Assured annually between age 20 and 24 (you choose the proportion), with the remaining amount paid at maturity at age 25. This structured payout covers college years perfectly, ensuring your child completes their education without financial stress. The plan also includes a premium waiver if the parent/policyholder passes away during the term.",
+            category: "Child Returns"
           },
           {
             name: "Amritbaal",
             slug: "lic-amritbaal",
             description: "A specialized child plan offering guaranteed additions and high returns to secure the ambitious dreams of the next generation.",
-            whyChoose: "Amritbaal is one of LIC's most high-growth offerings for children. It features robust guaranteed additions that ensure your child's corpus grows significantly over time. Designed for the long term, it provides the substantial financial backing needed for premium higher education or starting a business later in life. It's the ultimate gift of financial security for a young child."
+            whyChoose: "Amritbaal is one of LIC's most high-growth offerings for children. It features robust guaranteed additions that ensure your child's corpus grows significantly over time. Designed for the long term, it provides the substantial financial backing needed for premium higher education or starting a business later in life. It's the ultimate gift of financial security for a young child.",
+            category: "Child Returns"
           },
 
           // TERM PLANS
@@ -191,49 +205,57 @@ export const services: Service[] = [
             name: "LIC's Saral Jeevan Bima",
             slug: "lic-saral-jeevan-bima",
             description: "A standard, simple, IRDAI-mandated term insurance plan with uniform coverage terms across all insurers.",
-            whyChoose: "LIC's Saral Jeevan Bima is the simplest possible term insurance policy — standardised by the IRDAI so all insurers offer identical terms, making comparison easy and decision-making straightforward. It is especially suited for first-time insurance buyers, rural customers, and those with limited insurance literacy. The plan offers life cover from ₹5 lakh to ₹25 lakh with no complex conditions or exclusions beyond the standard waiting period for accidents. If you want a basic, no-frills life cover from LIC's trusted brand, this is the place to start."
+            whyChoose: "LIC's Saral Jeevan Bima is the simplest possible term insurance policy — standardised by the IRDAI so all insurers offer identical terms, making comparison easy and decision-making straightforward. It is especially suited for first-time insurance buyers, rural customers, and those with limited insurance literacy. The plan offers life cover from ₹5 lakh to ₹25 lakh with no complex conditions or exclusions beyond the standard waiting period for accidents. If you want a basic, no-frills life cover from LIC's trusted brand, this is the place to start.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's Yuva Term",
             slug: "lic-yuva-term",
             description: "LIC's pure term plan exclusively for young individuals, offering high coverage at very competitive premiums.",
-            whyChoose: "Yuva Term is LIC's answer for young adults who want to get a strong life insurance foundation early. Younger entry age means significantly lower premiums locked in for the entire term, making this one of the most cost-efficient ways to secure a large life cover. With flexible Sum Assured options and premium payment modes, Yuva Term is the ideal first life insurance policy for anyone in their 20s or early 30s who wants to protect their family's future affordably."
+            whyChoose: "Yuva Term is LIC's answer for young adults who want to get a strong life insurance foundation early. Younger entry age means significantly lower premiums locked in for the entire term, making this one of the most cost-efficient ways to secure a large life cover. With flexible Sum Assured options and premium payment modes, Yuva Term is the ideal first life insurance policy for anyone in their 20s or early 30s who wants to protect their family's future affordably.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's Yuva Credit Life",
             slug: "lic-yuva-credit-life",
             description: "A pure term insurance plan for young borrowers to protect their families from outstanding loan liabilities.",
-            whyChoose: "LIC's Yuva Credit Life is designed for young individuals (18–40 years) who have taken loans early in their career. It provides life cover equivalent to the outstanding loan amount, protecting your family from inheriting your financial liabilities. With preferential rates for younger applicants, this is a smart, affordable add-on for any young professional managing a home loan, personal loan, or education loan. It provides peace of mind without straining your monthly budget."
+            whyChoose: "LIC's Yuva Credit Life is designed for young individuals (18–40 years) who have taken loans early in their career. It provides life cover equivalent to the outstanding loan amount, protecting your family from inheriting your financial liabilities. With preferential rates for younger applicants, this is a smart, affordable add-on for any young professional managing a home loan, personal loan, or education loan. It provides peace of mind without straining your monthly budget.",
+            category: "Term Assurance"
           },
           {
             name: "Bima Kavach",
             slug: "lic-bima-kavach",
             description: "A comprehensive term insurance offering 'shield-like' protection with highly affordable premiums for standard risks.",
-            whyChoose: "Bima Kavach is built for individuals who prioritize high death benefit over everything else. It acts as a primary financial shield, ensuring that in your absence, your family's standard of living and future goals remain protected. It is an essential component of any responsible adult's financial portfolio."
+            whyChoose: "Bima Kavach is built for individuals who prioritize high death benefit over everything else. It acts as a primary financial shield, ensuring that in your absence, your family's standard of living and future goals remain protected. It is an essential component of any responsible adult's financial portfolio.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's New Jeevan Amar",
             slug: "lic-new-jeevan-amar",
             description: "Non-linked, non-participating, individual, pure risk premium life insurance plan offering high Sum Assured at low cost.",
-            whyChoose: "LIC's New Jeevan Amar is a pure term insurance plan — the most cost-effective way to buy a large life cover. There is no savings component, which means premiums are extremely affordable, allowing you to secure a very high Sum Assured for your family at a fraction of the cost of an endowment plan. This plan is the right choice for breadwinners who want to ensure their family's financial independence in case of an unfortunate event. With options for level or increasing sum assured, it adapts to your growing responsibilities."
+            whyChoose: "LIC's New Jeevan Amar is a pure term insurance plan — the most cost-effective way to buy a large life cover. There is no savings component, which means premiums are extremely affordable, allowing you to secure a very high Sum Assured for your family at a fraction of the cost of an endowment plan. This plan is the right choice for breadwinners who want to ensure their family's financial independence in case of an unfortunate event. With options for level or increasing sum assured, it adapts to your growing responsibilities.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's New Tech-Term",
             slug: "lic-new-tech-term",
             description: "A digitally-purchased pure-term insurance plan with competitive rates and a wide Sum Assured range.",
-            whyChoose: "LIC's New Tech-Term is an online pure-term plan that bridges the gap between LIC's trusted claim settlement and the efficiency of digital insurance. You get the same sovereign-backed reliability with a simplified online process and lower premiums compared to offline term plans. The Sum Assured range is wide — from ₹5 lakh upward — ensuring you can customize coverage to your exact income replacement needs. It is plain, transparent, and powerful."
+            whyChoose: "LIC's New Tech-Term is an online pure-term plan that bridges the gap between LIC's trusted claim settlement and the efficiency of digital insurance. You get the same sovereign-backed reliability with a simplified online process and lower premiums compared to offline term plans. The Sum Assured range is wide — from ₹5 lakh upward — ensuring you can customize coverage to your exact income replacement needs. It is plain, transparent, and powerful.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's Digi Term",
             slug: "lic-digi-term",
             description: "Online-only, non-linked pure term insurance plan from LIC with affordable premiums and flexible coverage options.",
-            whyChoose: "LIC's Digi Term is specifically designed for the digital-savvy customer who prefers to buy insurance online. As an exclusively online plan, it offers lower premiums than regular policy channels while providing the same level of trust and claim reliability LIC is known for. You can choose your Sum Assured, premium payment term, and benefit payout option (lump sum or regular income) entirely online. It is a practical option for urban professionals who want maximum coverage at minimum cost."
+            whyChoose: "LIC's Digi Term is specifically designed for the digital-savvy customer who prefers to buy insurance online. As an exclusively online plan, it offers lower premiums than regular policy channels while providing the same level of trust and claim reliability LIC is known for. You can choose your Sum Assured, premium payment term, and benefit payout option (lump sum or regular income) entirely online. It is a practical option for urban professionals who want maximum coverage at minimum cost.",
+            category: "Term Assurance"
           },
           {
             name: "LIC's Digi Credit Life",
             slug: "lic-digi-credit-life",
             description: "Online pure term insurance plan for loan borrowers, ensuring your outstanding loans are covered in case of death.",
-            whyChoose: "LIC's Digi Credit Life is a decreasing-term insurance plan tailored for individuals with outstanding loans — home loans, car loans, or personal loans. The Sum Assured reduces in line with your diminishing loan balance, ensuring your family is never burdened with repaying debt in case of your untimely demise. Premium prices are extremely competitive and the entire process is online. If you have recently taken a significant loan, pairing it with Digi Credit Life is a financially responsible decision."
+            whyChoose: "LIC's Digi Credit Life is a decreasing-term insurance plan tailored for individuals with outstanding loans — home loans, car loans, or personal loans. The Sum Assured reduces in line with your diminishing loan balance, ensuring your family is never burdened with repaying debt in case of your untimely demise. Premium prices are extremely competitive and the entire process is online. If you have recently taken a significant loan, pairing it with Digi Credit Life is a financially responsible decision.",
+            category: "Term Assurance"
           },
 
           // PENSION PLANS
@@ -241,25 +263,29 @@ export const services: Service[] = [
             name: "LIC's New Jeevan Shanti",
             slug: "lic-new-jeevan-shanti",
             description: "Non-linked, non-participating, individual, single premium, deferred annuity plan for guaranteed future pension.",
-            whyChoose: "LIC's New Jeevan Shanti lets you lock in a guaranteed pension payout rate today, with the pension starting at a future date you choose. Pay once, and from your chosen vesting date you receive a guaranteed monthly/annual pension for life — regardless of how much interest rates change in the future. This is particularly valuable in a falling interest-rate environment where traditional FDs cannot guarantee future rates. It is the anchor product for retirement planning among BrightLife's clients."
+            whyChoose: "LIC's New Jeevan Shanti lets you lock in a guaranteed pension payout rate today, with the pension starting at a future date you choose. Pay once, and from your chosen vesting date you receive a guaranteed monthly/annual pension for life — regardless of how much interest rates change in the future. This is particularly valuable in a falling interest-rate environment where traditional FDs cannot guarantee future rates. It is the anchor product for retirement planning among BrightLife's clients.",
+            category: "Pension & Retirement"
           },
           {
             name: "Saral Pension",
             slug: "lic-saral-pension",
             description: "A standardized immediate annuity plan offering transparent lifetime income for you and your spouse.",
-            whyChoose: "Saral Pension is the gold standard for simple retirement income. As an immediate annuity, it starts paying you as soon as you invest. Its standardized terms mean you get exactly what you expect: a reliable, lifelong income stream that allows you to enjoy your golden years with absolute financial peace of mind. It's the ideal choice for those migrating from a career to a secure retirement."
+            whyChoose: "Saral Pension is the gold standard for simple retirement income. As an immediate annuity, it starts paying you as soon as you invest. Its standardized terms mean you get exactly what you expect: a reliable, lifelong income stream that allows you to enjoy your golden years with absolute financial peace of mind. It's the ideal choice for those migrating from a career to a secure retirement.",
+            category: "Pension & Retirement"
           },
           {
             name: "LIC's Jeevan Akshay - VII",
             slug: "lic-jeevan-akshay-vii",
             description: "Non-linked, non-participating, individual immediate annuity plan — pay once and get pension payments starting immediately.",
-            whyChoose: "Jeevan Akshay VII is LIC's flagship immediate annuity plan — perfect for retirees or anyone who wants to convert a lump sum into a regular, guaranteed income stream that begins immediately. With 10 different annuity options (life only, joint life, with return of purchase price, etc.), you can fully customise how the pension is paid and what happens to the residual amount. It eliminates longevity risk — the fear of outliving your savings. Once invested, regardless of how long you live, LIC guarantees your pension."
+            whyChoose: "Jeevan Akshay VII is LIC's flagship immediate annuity plan — perfect for retirees or anyone who wants to convert a lump sum into a regular, guaranteed income stream that begins immediately. With 10 different annuity options (life only, joint life, with return of purchase price, etc.), you can fully customise how the pension is paid and what happens to the residual amount. It eliminates longevity risk — the fear of outliving your savings. Once invested, regardless of how long you live, LIC guarantees your pension.",
+            category: "Pension & Retirement"
           },
           {
             name: "Smart Pension",
             slug: "lic-smart-pension",
             description: "A modern pension planning tool that allows you to build a substantial retirement kitty with flexibility and market-aligned growth.",
-            whyChoose: "Smart Pension is designed for the proactive retiree. It offers the ability to contribute regularly towards your retirement while benefiting from LIC's expert fund management. It focuses on maximizing the final corpus, ensuring that when you do decide to retire, you have a substantial 'Smart' fund to support your lifestyle without compromise."
+            whyChoose: "Smart Pension is designed for the proactive retiree. It offers the ability to contribute regularly towards your retirement while benefiting from LIC's expert fund management. It focuses on maximizing the final corpus, ensuring that when you do decide to retire, you have a substantial 'Smart' fund to support your lifestyle without compromise.",
+            category: "Pension & Retirement"
           },
 
           // ULIP PLANS
@@ -267,37 +293,43 @@ export const services: Service[] = [
             name: "Endowment Plus",
             slug: "lic-endowment-plus",
             description: "A unit-linked plan that gives you the dual benefit of life cover and market-linked returns in a discipline endowment format.",
-            whyChoose: "Endowment Plus is perfect for investors who want to participate in the equity or debt markets while maintaining a safety net of life insurance. It bridges the gap between traditional savings and aggressive investing, offering LIC's reliable management with the potential for inflation-beating returns over the long term."
+            whyChoose: "Endowment Plus is perfect for investors who want to participate in the equity or debt markets while maintaining a safety net of life insurance. It bridges the gap between traditional savings and aggressive investing, offering LIC's reliable management with the potential for inflation-beating returns over the long term.",
+            category: "ULIPs (Market Linked)"
           },
           {
             name: "LIC's Nivesh Plus",
             slug: "lic-nivesh-plus",
             description: "Unit Linked, single premium, individual life insurance plan — invest once and let your money grow market-linked.",
-            whyChoose: "LIC's Nivesh Plus is a single premium ULIP — ideal for investors with a lump sum to deploy. You pay once and your money is invested across LIC's fund options (debt, equity, or balanced) based on your risk appetite. The policy provides life cover throughout the term and the fund value grows based on market performance. Suitable for investors who have received a bonus, matured an FD, or received a windfall and want to put it into a long-term, market-linked instrument with a life cover."
+            whyChoose: "LIC's Nivesh Plus is a single premium ULIP — ideal for investors with a lump sum to deploy. You pay once and your money is invested across LIC's fund options (debt, equity, or balanced) based on your risk appetite. The policy provides life cover throughout the term and the fund value grows based on market performance. Suitable for investors who have received a bonus, matured an FD, or received a windfall and want to put it into a long-term, market-linked instrument with a life cover.",
+            category: "ULIPs (Market Linked)"
           },
           {
             name: "LIC's SIIP",
             slug: "lic-siip",
             description: "Unit Linked, regular premium, individual life insurance plan offering market-linked growth with life protection.",
-            whyChoose: "LIC's SIIP (Systematic Investment Insurance Plan) is a ULIP that combines life insurance with market-linked investment — similar to investing in mutual funds, but with an inbuilt life cover. You invest regularly (like an SIP) across LIC's internally managed funds, with the flexibility to switch between funds as market conditions change. SIIP is ideal for investors who want equity and debt market participation within the safety net of a life insurance policy, especially over a long investment horizon of 10+ years."
+            whyChoose: "LIC's SIIP (Systematic Investment Insurance Plan) is a ULIP that combines life insurance with market-linked investment — similar to investing in mutual funds, but with an inbuilt life cover. You invest regularly (like an SIP) across LIC's internally managed funds, with the flexibility to switch between funds as market conditions change. SIIP is ideal for investors who want equity and debt market participation within the safety net of a life insurance policy, especially over a long investment horizon of 10+ years.",
+            category: "ULIPs (Market Linked)"
           },
           {
             name: "LIC's New Pension Plus",
             slug: "lic-new-pension-plus",
             description: "Unit Linked, non-participating, individual pension plan to accumulate a retirement corpus through market-linked investment.",
-            whyChoose: "LIC's New Pension Plus is a ULIP-based retirement plan that lets you accumulate a pension corpus by investing in market-linked funds. Unlike traditional endowment-based pension plans, New Pension Plus gives you the potential for higher long-term returns through equity participation. Upon retirement, the accumulated fund value can be used to buy a regular annuity for life income. If you are a working professional still years away from retirement, this plan's long investment horizon allows your corpus to grow significantly."
+            whyChoose: "LIC's New Pension Plus is a ULIP-based retirement plan that lets you accumulate a pension corpus by investing in market-linked funds. Unlike traditional endowment-based pension plans, New Pension Plus gives you the potential for higher long-term returns through equity participation. Upon retirement, the accumulated fund value can be used to buy a regular annuity for life income. If you are a working professional still years away from retirement, this plan's long investment horizon allows your corpus to grow significantly.",
+            category: "ULIPs (Market Linked)"
           },
           {
             name: "LIC's Index Plus",
             slug: "lic-index-plus",
             description: "Unit Linked, regular premium plan where the fund performance is benchmarked to leading market indices.",
-            whyChoose: "LIC's Index Plus is a ULIP that tracks leading market indices (like the Nifty 50), giving you transparent, passive market returns without active fund management risk. It is perfect for financially aware investors who believe in index-based investing and want to combine it with life insurance. Lower fund management charges compared to actively managed ULIPs make it cost-effective over the long term. Index Plus is the smart choice for someone who wants LIC's stability with market index growth."
+            whyChoose: "LIC's Index Plus is a ULIP that tracks leading market indices (like the Nifty 50), giving you transparent, passive market returns without active fund management risk. It is perfect for financially aware investors who believe in index-based investing and want to combine it with life insurance. Lower fund management charges compared to actively managed ULIPs make it cost-effective over the long term. Index Plus is the smart choice for someone who wants LIC's stability with market index growth.",
+            category: "ULIPs (Market Linked)"
           },
           {
             name: "Protection Plus",
             slug: "lic-protection-plus",
             description: "A premium ULIP focused on providing higher life cover alongside specialized market investment options for HNI clients.",
-            whyChoose: "Protection Plus is designed for clients who need substantial insurance coverage along with the benefits of unit-linked investing. It allows you to protect your family's massive financial future while simultaneously growing your wealth through a curated selection of market funds. It is the sophisticated choice for wealth preservation and growth."
+            whyChoose: "Protection Plus is designed for clients who need substantial insurance coverage along with the benefits of unit-linked investing. It allows you to protect your family's massive financial future while simultaneously growing your wealth through a curated selection of market funds. It is the sophisticated choice for wealth preservation and growth.",
+            category: "ULIPs (Market Linked)"
           },
 
           // MICRO INSURANCE
@@ -305,7 +337,17 @@ export const services: Service[] = [
             name: "Micro Bachat",
             slug: "lic-micro-bachat",
             description: "A small-ticket insurance plan designed for the common man, offering savings and protection with minimal documentation.",
-            whyChoose: "Micro Bachat brings LIC's safety to every doorstep. With small premium amounts and easy accessibility, it ensures that even small-scale savings are converted into meaningful life protection. It is a cornerstone of financial inclusion, providing dignity and security to millions of families who deserve a reliable financial anchor."
+            whyChoose: "Micro Bachat brings LIC's safety to every doorstep. With small premium amounts and easy accessibility, it ensures that even small-scale savings are converted into meaningful life protection. It is a cornerstone of financial inclusion, providing dignity and security to millions of families who deserve a reliable financial anchor.",
+            category: "Specialized Plans"
+          },
+
+          // SPECIAL / MISC CATEGORY
+          {
+            name: "Bima Lakshmi",
+            slug: "lic-bima-lakshmi",
+            description: "A specialized savings and protection plan designed to empower and secure the financial future of women.",
+            whyChoose: "Bima Lakshmi is a dedicated plan reflecting LIC's commitment to women's financial independence. It provides a unique combination of savings and life cover, tailored to meet the specific requirements of women at various life stages. Whether you are building a retirement fund, saving for a child's milestone, or seeking a primary life cover, Bima Lakshmi offers competitive returns with the absolute security of LIC.",
+            category: "Specialized Plans"
           }
         ]
       }
@@ -330,23 +372,10 @@ export const services: Service[] = [
         whyChoose: "Galaxy Health Insurance stands out in the crowded health insurance market with its innovative product design, generous Sum Insured options (up to ₹2 Crore), and customer-centric features like the 'Premium Promise' — a guarantee that your health insurance premium will not increase just because you made a claim. Galaxy's wide hospital network ensures cashless access across major cities and towns. BrightLife Insurance recommends Galaxy Health for families and individuals who want robust, long-term health protection with transparent terms and no unpleasant surprises at claim time.",
         plans: [
           {
-            name: "Galaxy Promise (Premium Plan)",
-            slug: "galaxy-promise-premium",
-            description: "An advanced health plan offering comprehensive coverage with the signature 'Premium Promise' to safeguard you against future rate hikes.",
-            whyChoose: "The Galaxy Promise Premium Plan is designed for families who want a solid balance between extensive coverage and affordability. It includes our unique 'Premium Promise'—guaranteeing that your base premium won't increase just because you made a claim. With sum insured options up to ₹1 Crore and restoration benefits, it ensures your family is protected against even the most significant medical emergencies without the stress of rising costs.",
-            features: [
-              "Up to ₹1 Crore Sum Insured",
-              "Premium Promise (Rate lock guarantee)",
-              "Unlimited restoration of sum insured",
-              "Comprehensive maternity and newborn coverage",
-              "No Claim Bonus up to 500%"
-            ]
-          },
-          {
             name: "Galaxy Promise (Signature Plan)",
             slug: "galaxy-promise-signature",
             description: "A premium tier of the Promise series offering higher sub-limits and enhanced comfort during hospitalization.",
-            whyChoose: "The Signature Plan is for those who prioritize comfort and higher coverage limits. It offers all the benefits of the Premium plan but with enhanced room rent limits and pre/post-hospitalization windows. It's the perfect middle ground for families who want superior healthcare access and the long-term security of LIC-backed Galaxy reliability.",
+            whyChoose: "The Signature Plan is for those who prioritize comfort and higher coverage limits. It offers all the benefits of the Premier plan but with enhanced room rent limits and pre/post-hospitalization windows. It's the perfect middle ground for families who want superior healthcare access and the long-term security of LIC-backed Galaxy reliability.",
             features: [
               "Enhanced room rent and ICU limits",
               "Extended pre & post hospitalization coverage",
@@ -366,6 +395,19 @@ export const services: Service[] = [
               "Private suite room eligibility",
               "Highest maternity and OP benefit limits",
               "Premium Promise (Absolute rate lock)"
+            ]
+          },
+          {
+            name: "Galaxy Promise (Premier Plan)",
+            slug: "galaxy-promise-premier",
+            description: "An advanced health plan offering comprehensive coverage with the signature 'Premium Promise' to safeguard you against future rate hikes.",
+            whyChoose: "The Galaxy Promise Premier Plan is designed for families who want a solid balance between extensive coverage and affordability. It includes our unique 'Premium Promise'—guaranteeing that your base premium won't increase just because you made a claim. With sum insured options up to ₹1 Crore and restoration benefits, it ensures your family is protected against even the most significant medical emergencies without the stress of rising costs.",
+            features: [
+              "Up to ₹1 Crore Sum Insured",
+              "Premium Promise (Rate lock guarantee)",
+              "Unlimited restoration of sum insured",
+              "Comprehensive maternity and newborn coverage",
+              "No Claim Bonus up to 500%"
             ]
           },
           {

@@ -91,7 +91,7 @@ export default async function PlanDetail({ params }: Props) {
                                     </h2>
                                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
                                         <div className="accordion-body text-muted">
-                                            The claim process is simple and hassle-free. You can initiate a claim through our online portal, or by contacting our 24/7 customer support team with the required documentation.
+                                            The claim process is simple and hassle-free. You can initiate a claim through our online portal, or by contacting our customer support team with the required documentation.
                                         </div>
                                     </div>
                                 </div>

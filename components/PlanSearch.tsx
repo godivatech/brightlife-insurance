@@ -7,6 +7,7 @@ interface Plan {
     name: string;
     slug: string;
     description: string;
+    category?: string;
 }
 
 interface PlanSearchProps {
@@ -17,14 +18,35 @@ interface PlanSearchProps {
 
 const PlanSearch: React.FC<PlanSearchProps> = ({ plans, serviceSlug, providerSlug }) => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-    const filteredPlans = plans.filter(plan =>
-        plan.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        plan.description.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    // Extract unique categories from plans
+    const categories = ['All', ...Array.from(new Set(plans.filter(p => p.category).map(p => p.category as string)))];
+
+    const filteredPlans = plans.filter(plan => {
+        const matchesSearch = plan.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            plan.description.toLowerCase().includes(searchTerm.toLowerCase());
+        const matchesCategory = selectedCategory === 'All' || plan.category === selectedCategory;
+
+        return matchesSearch && matchesCategory;
+    });
 
     return (
         <div className="plan-search-container">
+            {categories.length > 1 && (
+                <div className="d-flex flex-wrap gap-2 mb-4 justify-content-center">
+                    {categories.map(category => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`btn rounded-pill px-4 py-2 fw-semibold ${selectedCategory === category ? 'btn-primary text-white shadow' : 'btn-outline-primary bg-white'}`}
+                            style={{ transition: 'all 0.3s ease' }}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
+            )}
             <div className="position-relative mb-5 shadow-sm rounded overflow-hidden">
                 <span className="position-absolute h-100 d-flex align-items-center ps-4 text-primary">
                     <i className="fa fa-search"></i>

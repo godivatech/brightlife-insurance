@@ -1,5 +1,5 @@
 import React from 'react';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import PageHeader from '@/components/PageHeader';
 import ProviderCard from '@/components/ProviderCard';
 import Appointment from '@/components/Appointment';
@@ -27,6 +27,10 @@ export default async function ServiceDetail({ params }: Props) {
 
     if (!service) {
         notFound();
+    }
+
+    if (service.providers && service.providers.length === 1) {
+        redirect(`/service/${service.slug}/${service.providers[0].slug}`);
     }
 
     return (

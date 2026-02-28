@@ -53,6 +53,31 @@ export default async function ProviderDetail({ params }: Props) {
                             <h2 className="mb-4">{provider.name}</h2>
                             <p className="mb-5 fs-5 text-muted">{provider.description}</p>
 
+                            {/* If this is the only provider, inject parent service marketing copy here */}
+                            {service.providers && service.providers.length === 1 && (
+                                <div className="mb-5">
+                                    <h3 className="mb-4">Why Choose Our {service.name}?</h3>
+                                    <p className="mb-4">
+                                        {service.whyChoose}
+                                    </p>
+
+                                    {service.keyBenefits && service.keyBenefits.length > 0 && (
+                                        <div className="row g-4 mb-4">
+                                            {service.keyBenefits.map((benefit, i) => (
+                                                <div key={i} className="col-sm-6">
+                                                    <div className="d-flex align-items-center">
+                                                        <div className="btn-lg-square bg-primary rounded-circle me-3" style={{ width: '40px', height: '40px' }}>
+                                                            <i className="fa fa-check text-white"></i>
+                                                        </div>
+                                                        <h6 className="mb-0">{benefit}</h6>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
                             <h3 className="mb-4">Why {provider.name}?</h3>
                             <p className="mb-4">
                                 {provider.whyChoose}
