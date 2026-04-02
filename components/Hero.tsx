@@ -6,37 +6,10 @@ const Hero = () => {
             <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="w-100" src="/img/carousel-1.png" alt="Image" />
-                        <div className="carousel-caption">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-12 col-lg-10">
-                                        <h1 className="display-3 text-dark mb-4 animated slideInDown">
-                                            Insurance Creates Wealth <br /> For Everyone
-                                        </h1>
-                                        <a href="" className="btn btn-primary py-3 px-5 text-white">More Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img className="w-100" src="/img/carousel-1.jpg" alt="Image" />
                     </div>
                     <div className="carousel-item">
-                        <img className="w-100" src="/img/carousel-2.png" alt="Image" />
-                        <div className="carousel-caption">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-12 col-lg-6">
-                                        <h1 className="display-3 text-dark mb-4 animated slideInDown">
-                                            The Best Insurance Begins Here
-                                        </h1>
-                                        <p className="fs-5 text-body mb-5 d-none d-lg-block">
-                                            Life, Health, and Motor Insurance tailored to your needs. <br className="d-none d-lg-block" />Trust S. Sonai and our 25+ years of experience.
-                                        </p>
-                                        <a href="" className="btn btn-primary py-3 px-5 text-white">More Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img className="w-100" src="/img/carousel-3.jpeg" alt="Image" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
