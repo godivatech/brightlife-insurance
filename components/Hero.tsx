@@ -6,7 +6,7 @@ const Hero = () => {
             <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="w-100" src="/img/carousel-1.jpg" alt="Image" />
+                        <img className="w-100" src="/img/carousel-1.jpeg" alt="Image" />
                     </div>
                     <div className="carousel-item">
                         <img className="w-100" src="/img/carousel-3.jpeg" alt="Image" />
