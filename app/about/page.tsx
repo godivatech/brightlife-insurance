@@ -21,10 +21,15 @@ export default function About() {
                     <div className="row g-5">
                         <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style={{ minHeight: '400px' }}>
-                                <img className="position-absolute w-100 h-100 about-profile-img" src="/img/Profile.png" alt="" style={{ objectFit: 'cover' }} />
+                                <img 
+                                    className="position-absolute h-100 about-profile-img" 
+                                    src="/img/profile 2.jpeg" 
+                                    alt="S. Sonai Profile" 
+                                    style={{ objectFit: 'cover', width: 'auto', maxWidth: '500px', left: '50%', transform: 'translateX(-50%)' }} 
+                                />
                                 <div className="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3 experience-box">
                                     <div className="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
-                                        <h1 className="text-white mb-0">25</h1>
+                                        <h1 className="text-white mb-0">25+</h1>
                                         <h2 className="text-white">Years</h2>
                                         <h5 className="text-white mb-0">Experience</h5>
                                     </div>
