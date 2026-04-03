@@ -10,7 +10,8 @@ const Hero = () => {
                         <img className="w-100 d-block d-md-none" src="/img/carouse-1 mobile.jpeg" alt="Image" />
                     </div>
                     <div className="carousel-item">
-                        <img className="w-100" src="/img/carousel-3.jpeg" alt="Image" />
+                        <img className="w-100 d-none d-md-block" src="/img/carousel-3.jpeg" alt="Image" />
+                        <img className="w-100 d-block d-md-none" src="/img/carouse-2 mobile.jpeg" alt="Image" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
