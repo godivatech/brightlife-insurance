@@ -39,10 +39,11 @@ body {
 
   .about-profile-img {
     object-position: center 15% !important;
-    /* Use transform to physically shift the image left if object-position fails due to perfect width fit */
-    width: 115% !important;
+    width: 100% !important;
+    height: 100% !important;
     max-width: none !important;
-    left: -1% !important;
+    left: 0 !important;
+    transform: none !important;
   }
 }
 

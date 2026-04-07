@@ -8,10 +8,10 @@ const About = () => {
                     <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div className="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style={{ minHeight: '400px' }}>
                             <img 
-                                className="position-absolute w-100 h-100 about-profile-img" 
-                                src="/img/profile 3.png" 
+                                className="position-absolute h-100 about-profile-img" 
+                                src="/img/profile 4.jpeg" 
                                 alt="S. Sonai Profile" 
-                                style={{ objectFit: 'cover' }} 
+                                style={{ objectFit: 'cover', width: 'auto', maxWidth: '500px', left: '50%', transform: 'translateX(-50%)' }} 
                             />
                             <div className="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3 experience-box">
                                 <div className="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
