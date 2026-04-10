@@ -90,23 +90,18 @@ const Navbar = () => {
                         transition: all 0.4s ease;
                     }
                     
-                    /* Scrolled Transition State -> Floating Pill */
+                    /* Scrolled Transition State -> Simple Sticky */
                     .modern-navbar.navbar-scrolled {
-                        top: 20px !important;
-                        margin-left: auto;
-                        margin-right: auto;
-                        width: 90%;
-                        max-width: 1200px;
-                        border-radius: 50px;
-                        background: rgba(255, 255, 255, 0.9) !important;
-                        backdrop-filter: blur(15px);
-                        -webkit-backdrop-filter: blur(15px);
-                        border: 1px solid rgba(255, 255, 255, 0.4);
-                        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-                        padding: 10px 30px !important;
+                        top: 0 !important;
+                        width: 100%;
+                        max-width: none;
+                        border-radius: 0;
+                        background: #ffffff !important;
+                        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+                        padding: 10px 40px !important;
                     }
                     .modern-navbar.navbar-scrolled .responsive-logo {
-                        max-height: 55px; /* scale down slightly when floating */
+                        max-height: 60px;
                     }
                     
                     /* Modern capsule-style hover for links on desktop */
