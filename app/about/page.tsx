@@ -23,7 +23,7 @@ export default function About() {
                             <div className="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style={{ minHeight: '400px' }}>
                                 <img 
                                     className="position-absolute h-100 about-profile-img" 
-                                    src="/img/profile 4.jpeg" 
+                                    src="/img/profile-5.jpeg" 
                                     alt="S. Sonai Profile" 
                                     style={{ objectFit: 'cover', width: 'auto', maxWidth: '500px', left: '50%', transform: 'translateX(-50%)' }} 
                                 />
